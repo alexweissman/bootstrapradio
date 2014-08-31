@@ -48,6 +48,14 @@ Use the standard HTML `disabled` property to disable an option:
 </button>
 ````
 
+Get the currently selected value just the same way as you'd get the value of any input field:
+
+````
+console.log($("input[name='primary_group']").val());
+````
+
+This makes it easy to submit the selected value in a form along with other elements.
+
 #### Javascript
 
 You can also initialize a Bootstrapradio set through jQuery, by calling `bootstrapradio` on one or more of the buttons:
