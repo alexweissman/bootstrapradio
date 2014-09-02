@@ -4,7 +4,7 @@
 
 Copyright (c) 2014
 
-An attractive, container-free implementation of styled radio buttons for Twitter Bootstrap.  Compatible with Font Awesome icons.
+An attractive, container-free implementation of radio-style selector buttons for Twitter Bootstrap.  Compatible with Font Awesome icons.
 
 ### Screenshot
 
@@ -68,7 +68,11 @@ $("button[name='beverage']").bootstrapradio();
 $("button[name='beverage']").bootstrapradio({
     'default': "beer"
 });
+````
 
+You can get or set the currently selected value by calling the 'value' method:
+
+````
 // Get the value
 console.log($("button[name='beverage']").bootstrapradio('value'));
 
@@ -76,6 +80,16 @@ console.log($("button[name='beverage']").bootstrapradio('value'));
 $("button[name='beverage']").bootstrapradio('value', "beer");
 
 ````
+
+You can enable or disable a specific option by calling the 'disabled' method on the corresponding element:
+
+```` 
+$("button[name='beverage'][value='beer']").bootstrapradio('disabled', 'true');
+````
+
+If you disable an element while it is selected, it will become automatically de-selected and the value of the radio group will revert to the empty string.
+Notice that 'true' and 'false' are strings.
+
 
 ## Dependencies
 
