@@ -115,7 +115,9 @@ THE SOFTWARE.
         }
 
         // Apply default classes
-        el.addClass('btn btn-xs bootstrapradio');
+        var size = typeof el.attr("data-size") !== 'undefined' ? el.attr("data-size") : "xs";
+        
+        el.addClass('btn btn-' + size + ' bootstrapradio');
         
         // Attach handler for clicking a choice     
         el.click(function() {

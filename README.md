@@ -40,6 +40,14 @@ Use the `data-selected` attribute to set a button to initially be selected (`tru
 </button>
 ````
 
+Use the `data-size` attribute to set the size of an option ('xs', 'sm', 'md', or 'lg').  The default size is 'xs'.
+
+````
+<button type="button" class="bootstrapradio" name="primary_group" value="epicurist" title='Epicurist' data-selected='true' data-size='lg'>
+    <i class='fa fa-fw fa-cutlery'></i>
+</button>
+````
+
 Use the standard HTML `disabled` property to disable an option:
 
 ````
